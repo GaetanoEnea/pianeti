@@ -115,10 +115,16 @@ address{
 }
 
 dt {
+    width: 20%;
     display: inline-block;
-    min-width: 180px;
+    min-width: 200px;
 }
 
 dd {
+    width: 20%;
     display: inline-block;
+    min-width: 200px;
+    margin-left: 55px;
 }
+
+

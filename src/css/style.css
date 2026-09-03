@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    
+ 
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100; 
+       
+    margin: 0 auto;
+    font-size: 18px;
+    color:#040404;
+    background-color: #de9e36;
+}
+
+#title-container {
+
+    background-color: #37323e;
+    color:#de9e36;
+    padding: 50px;
+    text-align: center;
+}
+
+h1 {
+    text-shadow: 2px 2px 4px #A9731C;
+    word-spacing: 2px;
+    text-transform: uppercase;
+}
+
+h2 {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+p.par_header {
+    padding: 20px 50px;
+}
+
+span {
+    font-weight:bold ;
+}
+
+
+ul {
+    padding: 20px 50px;
+    list-style-position:inside;
+    list-style-image: url("../../assets/img/planet.png");
+
+}
+
+li {
+    padding: 10px 20px;
+}
+
+div.paragrafi {
+    border: 3px solid #37323e;
+    border-radius: 10px;
+}
+
+div#header {
+
+    padding: 20px;
+}
+
+div.card_container {
+    display: inline-block;
+    width: calc(33.333333% - 20px);
+    min-width: 150px;
+    /* margin: 15px; */
+    border: 2px solid #37323e;
+    font-size: 18px;
+    margin: 10px;
+}
+
+div.card_title {
+    border-bottom: 2px solid #37323e;
+    text-align: center;
+    padding: 5px;
+}
+p.par_body {
+    padding: 10px;
+    min-height: 200px;
+    max-height: 200px;
+    overflow-y: auto;
+    
+}
+
+div.card_footer {
+    border-top: 2px solid #37323e;
+    text-align: center;
+    padding: 20px;
+}
+
+#body {
+    /* font-size: 0; */
+    background-color: #eee;
+    padding: 10px;
+    font-size: 0;
+}
+
+#footer {
+    padding: 20px;
+}
+
+address{
+    display: inline-block;
+}
+
+dt {
+    display: inline-block;
+    min-width: 180px;
+}
+
+dd {
+    display: inline-block;
+}

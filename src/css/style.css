@@ -48,6 +48,10 @@ span {
     font-weight:bold ;
 }
 
+div.elenco_ul{
+    max-width: fit-content;
+    margin: 0 auto;
+}
 
 ul {
     padding: 20px 50px;
@@ -63,6 +67,9 @@ li {
 div.paragrafi {
     border: 3px solid #37323e;
     border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-image: linear-gradient(to bottom,  #de9e36,#b36f02);
 }
 
 div#header {
@@ -70,7 +77,18 @@ div#header {
     padding: 20px;
 }
 
+div.card_container:nth-of-type(2n+1)
+{
+    background-color:#ADACAF;
+}
+
+div.card_container:nth-of-type(2n)
+{
+    background-color:#D6D5D7;
+}
+
 div.card_container {
+
     display: inline-block;
     width: calc(33.333333% - 20px);
     min-width: 150px;
@@ -89,7 +107,7 @@ p.par_body {
     padding: 10px;
     min-height: 200px;
     max-height: 200px;
-    overflow-y: auto;
+    overflow-y:hidden;
     
 }
 

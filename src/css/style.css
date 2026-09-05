@@ -22,15 +22,16 @@ body {
 }
 
 #title-container {
-
-    background-color: #37323e;
+    background-image: linear-gradient(to top, #37323e, #726783);
+    /* background-color: #37323e; */
     color:#de9e36;
     padding: 50px;
     text-align: center;
 }
 
 h1 {
-    text-shadow: 2px 2px 4px #A9731C;
+    
+    text-shadow: 2px 2px 2px #161419;
     word-spacing: 2px;
     text-transform: uppercase;
 }
@@ -39,6 +40,23 @@ h2 {
     text-align: center;
     text-transform: capitalize;
 }
+
+h3{
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/* end SELETTORE PER CAMBIO COLORE AL PASSAGGIO DEL MOUSE PER 
+H3 PARI E DISPARI  */
+div.card_container:nth-of-type(2n+1) h3:hover{
+    color:#7342bd;
+}
+
+div.card_container:nth-of-type(2n) h3:hover{
+    color:#de9e36;
+}
+/* end SELETTORE PER CAMBIO COLORE AL PASSAGGIO DEL MOUSE PER 
+H3 PARI E DISPARI  */
 
 p.par_header {
     padding: 20px 50px;
@@ -69,11 +87,13 @@ div.paragrafi {
     border-radius: 10px;
     max-width: 800px;
     margin: 0 auto;
-    background-image: linear-gradient(to bottom,  #de9e36,#b36f02);
+    background-image: linear-gradient(to bottom,  #AF771D 5%,#DE9E36,#AF771D 95%);
 }
 
 div#header {
-
+    background-color: #eee;
+    /* background-image: radial-gradient(circle at 50% 30%, rgb(222, 158, 54),rgba(222, 158, 54, 0)75%); */
+     background-image:linear-gradient(to bottom, rgb(222, 158, 54)50%,rgba(222, 158, 54, 0) );
     padding: 20px;
 }
 
@@ -85,6 +105,7 @@ div.card_container:nth-of-type(2n+1)
 div.card_container:nth-of-type(2n)
 {
     background-color:#D6D5D7;
+    
 }
 
 div.card_container {
@@ -96,6 +117,8 @@ div.card_container {
     border: 2px solid #37323e;
     font-size: 18px;
     margin: 10px;
+    box-shadow: 1px 1px 1px 2px #ADACAF;
+    
 }
 
 div.card_title {
@@ -107,8 +130,9 @@ p.par_body {
     padding: 10px;
     min-height: 200px;
     max-height: 200px;
-    overflow-y:hidden;
-    
+    overflow-y:auto;
+    scrollbar-width: none;
+    text-overflow: ellipsis;
 }
 
 div.card_footer {
